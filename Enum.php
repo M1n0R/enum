@@ -17,7 +17,7 @@ abstract class Enum
         return new static($value);
     }
 
-    function __construct($value = null)
+    public function __construct($value = null)
     {
         $reflection = new \ReflectionClass(static::class);
         if (!empty($value)) {
